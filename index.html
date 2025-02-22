@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to DOM</h1>
+    </header>
+    <main>
+        <h1>Document Object Model</h1>
+        <ul>
+            <li>Lionel</li>
+            <li>Andres</li>
+            <li>Messi</li>
+        </ul>
+
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+        </ul>
+    </main>
+
+    <script src="dom.js"></script>
+
+    <script>
+       /* const student = {
+            name : 'Karim',
+            ID : 437,
+            study : function (time) {
+                console.log('Study Hours :',time)
+            }
+        }
+        console.log("inside HTML") */
+
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for (const li of liCollection) {
+            console.log(li)
+        }
+
+        const allHead = document.getElementsByTagName('h1');
+        for (const h1 of allHead) {
+            console.log(h1.innerText)
+        }
+    </script>
+</body>
+</html>
