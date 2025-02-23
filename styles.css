@@ -1,3 +1,13 @@
 h1 {
     color: brown;
 }
+
+#ft-title {
+    color: darkviolet;
+}
+#dom-title {
+    background-color: aquamarine;
+}
+.place {
+    color: slateblue;
+}
