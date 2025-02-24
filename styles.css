@@ -14,3 +14,9 @@ h1 {
 .fruits-container li {
     color: goldenrod;
 }
+.bg {
+    background-color: burlywood !important;
+}
+.large-text {
+    font-size: 2em;
+}
