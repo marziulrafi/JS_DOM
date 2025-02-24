@@ -24,7 +24,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="fruits-container">
             <h1 id="ft-title">Fruits List</h1>
             <ul>
                 <li>Apple</li>
@@ -44,6 +44,7 @@
     </main>
 
     <script src="dom.js"></script>
+    <script src="style.js"></script>
 
     <script>
         /* const student = {
@@ -68,11 +69,21 @@
 
         const places = document.getElementsByClassName('place');
         for (const place of places) {
-            console.log(place.innerText)
+            // console.log(place.innerText)
         }
 
         // const fruitsTitle = document.getElementById('ft-title');
         // fruitsTitle.innerText = 'Title changed by JS';
+
+
+
+        //QuerySelectorAll
+        const some_li = document.querySelectorAll('.fruits-container li')
+        // console.log(some_li)
+
+        for (const li of some_li) {
+            // console.log(li.innerText)
+        }
     </script>
 </body>
 
