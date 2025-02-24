@@ -14,7 +14,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellat nihil! Odio nostrum temporibus in optio
             necessitatibus totam neque saepe?</p>
     </header>
-    <main>
+    <main id="main-content">
         <section>
             <h1 id="dom-title">Document Object Model</h1>
             <ul>
@@ -35,15 +35,16 @@
 
         <section id="place-container" class="large-text">
             <h1>Places</h1>
-            <ul>
+            <ul id="place-list">
                 <li class="place">Barcelona</li>
                 <li class="place">Berlin</li>
                 <li class="place">Paris</li>
             </ul>
         </section>
     </main>
-
-    <script src="dom.js"></script>
+ 
+    <script src="dom.js"></script> <!-- This will execute first -->
+    <script src="append.js"></script>
     <script src="style.js"></script>
 
     <script>
